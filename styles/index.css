@@ -132,8 +132,9 @@ a:hover {
 
 .subtitle {
     margin-top: 0.85rem;
-    color: var(--muted);
+    color: #c8d6ff;
     max-width: 64ch;
+    font-weight: bold;
 }
 
 .pill-row {
