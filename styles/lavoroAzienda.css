@@ -145,3 +145,157 @@ footer {
   .photo-grid { grid-template-columns: 1fr; }
 }
 
+body.capolavoro-page {
+  background: #ffffff;
+  color: #24344f;
+  min-height: 100vh;
+}
+
+body.capolavoro-page main { padding: 1.2rem 0 1.8rem; }
+
+.capolavoro-layout {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+}
+
+.capolavoro-hero,
+.capolavoro-body,
+.capolavoro-quote,
+.capolavoro-footer {
+  width: 100%;
+}
+
+.capolavoro-hero { text-align: center; }
+
+.capolavoro-hero h1 {
+  margin: 0;
+  color: #234f9a;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+}
+
+.capolavoro-subtitle {
+  margin: 0.35rem 0 0;
+  color: #5b6a86;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.capolavoro-rule {
+  width: 72px;
+  height: 4px;
+  margin: 0.5rem auto 1rem;
+  border-radius: 999px;
+  background: #2f5fb8;
+}
+
+.capolavoro-intro,
+.capolavoro-body {
+  margin: 0 0 1rem;
+  color: #24344f;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.work-manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.work-card {
+  background: #ffffff;
+  border: 1px solid #dce5f2;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(18, 30, 54, 0.08);
+  padding: 0.95rem 1rem 0.9rem;
+}
+
+.work-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.02rem;
+  line-height: 1.18;
+  font-weight: 800;
+  color: #234f9a;
+}
+
+.work-card p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.45;
+  color: #33425c;
+}
+
+.work-card::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 26px;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+  background: #2f5fb8;
+}
+
+.work-card-orange::before { background: #f39b17; }
+.work-card-green::before { background: #2fbe5c; }
+.work-card-purple::before { background: #7a5de8; }
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+
+.work-tags span {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  background: #eaf3ff;
+  color: #225f9b;
+}
+
+.work-card-orange .work-tags span { background: #fff1d7; color: #b86d00; }
+.work-card-green .work-tags span { background: #dff6e6; color: #1f8a44; }
+.work-card-purple .work-tags span { background: #ece4ff; color: #684acb; }
+
+.capolavoro-quote {
+  margin: 0.1rem 0 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 5px solid #4d6b8f;
+  background: #e8edf5;
+  color: #31425c;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.capolavoro-footer {
+  display: grid;
+  gap: 0.1rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.capolavoro-footer strong {
+  color: #233a5e;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.capolavoro-footer span {
+  color: #70809b;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 720px) {
+  .work-manifesto-grid { grid-template-columns: 1fr; }
+}
+
