@@ -1,0 +1,40 @@
+# OS / system files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains IDE
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python cache (in case scripts/utilities are added)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Node / frontend caches
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+tmp/
+
+# Misc temporary files
+*.swp
+*.swo
+*~
+
